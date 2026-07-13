@@ -260,3 +260,135 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1783887327.799
     'REQUEST_TIME' => 1783887327
 ]
+2026-07-13 08:59:31 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/test-student in E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Controller.php:153
+Stack trace:
+#0 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('test-student', Array)
+#1 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('site/test-stude...', Array)
+#2 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\laragon\www\projects\coaching-mangement\api\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\web\Application.php:117
+Stack trace:
+#0 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\laragon\www\projects\coaching-mangement\api\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2026-07-13 08:59:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/test-student'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,bn;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\LENEvO\\AppData\\Local\\nvm;C:\\nvm4w\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Users\\LENEvO\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\LENEvO\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\LENEvO\\AppData\\Roaming\\npm;C:\\Users\\LENEvO\\AppData\\Local\\nvm;C:\\nvm4w\\nodejs;C:\\Users\\LENEvO\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\LENEvO\\AppData\\Local\\Python\\bin;E:\\laragon\\bin\\php\\php-8.3.30-Win32-vs16-x64;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.66 (Win64) OpenSSL/3.0.18 PHP/8.3.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/laragon/www'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => 'E:/laragon/www/projects/coaching-mangement/api/web/index.php'
+    'REMOTE_PORT' => '51296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test-student'
+    'REQUEST_URI' => '/projects/coaching-mangement/api/web/index.php?r=site/test-student'
+    'SCRIPT_NAME' => '/projects/coaching-mangement/api/web/index.php'
+    'PHP_SELF' => '/projects/coaching-mangement/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1783933171.5522
+    'REQUEST_TIME' => 1783933171
+]
+2026-07-13 09:00:23 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\web\Response::formate in E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Component.php:224
+Stack trace:
+#0 E:\laragon\www\projects\coaching-mangement\api\controllers\SiteController.php(37): yii\base\Component->__set('formate', 'json')
+#1 [internal function]: api\controllers\SiteController->actionTestStudent()
+#2 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Controller.php(182): yii\base\InlineAction->runWithParams(Array)
+#4 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Module.php(547): yii\base\Controller->runAction('test-student', Array)
+#5 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\web\Application.php(105): yii\base\Module->runAction('site/test-stude...', Array)
+#6 E:\laragon\www\projects\coaching-mangement\vendor\yiisoft\yii2\base\Application.php(382): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\laragon\www\projects\coaching-mangement\api\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2026-07-13 09:00:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/test-student'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,bn;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Users\\LENEvO\\AppData\\Local\\nvm;C:\\nvm4w\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Users\\LENEvO\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\LENEvO\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\LENEvO\\AppData\\Roaming\\npm;C:\\Users\\LENEvO\\AppData\\Local\\nvm;C:\\nvm4w\\nodejs;C:\\Users\\LENEvO\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\LENEvO\\AppData\\Local\\Python\\bin;E:\\laragon\\bin\\php\\php-8.3.30-Win32-vs16-x64;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.66 (Win64) OpenSSL/3.0.18 PHP/8.3.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/laragon/www'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => 'E:/laragon/www/projects/coaching-mangement/api/web/index.php'
+    'REMOTE_PORT' => '51301'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test-student'
+    'REQUEST_URI' => '/projects/coaching-mangement/api/web/index.php?r=site/test-student'
+    'SCRIPT_NAME' => '/projects/coaching-mangement/api/web/index.php'
+    'PHP_SELF' => '/projects/coaching-mangement/api/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1783933222.9027
+    'REQUEST_TIME' => 1783933222
+]
